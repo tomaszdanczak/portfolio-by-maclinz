@@ -64,6 +64,7 @@ const NavigationStyled = styled.nav`
     text-align: center;
     padding: 1rem 0;
     border-bottom: 1px solid var(--border-color);
+
     img {
       width: 70%;
       border-radius: 50%;
@@ -74,11 +75,14 @@ const NavigationStyled = styled.nav`
   .nav-items {
     width: 100%;
     text-align: center;
+
     .active-class {
       background-color: var(--primary-color);
     }
+
     li {
       display: block;
+
       a {
         display: block;
         padding: 0.45rem 0;
@@ -88,10 +92,12 @@ const NavigationStyled = styled.nav`
         transition: all 0.4s ease-in-out;
         font-weight: 600;
         letter-spacing: 1px;
+
         &:hover {
           cursor: pointer;
           color: var(--white-color);
         }
+
         &::before {
           content: "";
           position: absolute;
@@ -106,10 +112,23 @@ const NavigationStyled = styled.nav`
           z-index: -1;
         }
       }
+
       a:hover::before {
         width: 100%;
         height: 100%;
       }
+    }
+  }
+
+  .footer {
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+
+    p {
+      padding: 2rem 0;
+      font-size: 1.1rem;
+      display: block;
+      text-align: center;
     }
   }
   `;
