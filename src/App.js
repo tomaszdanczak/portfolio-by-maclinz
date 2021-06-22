@@ -7,6 +7,7 @@ import ResumePage from "./Pages/ResumePage";
 import PortfoliosPage from "./Pages/PortfoliosPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
+import Lines from "./Components/Lines";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Sidebar />
 
       <MainContentStyled>
+        <Lines/>
+
         <Switch>
           <Route path="/" exact>
             <HomePage />
