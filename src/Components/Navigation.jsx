@@ -57,6 +57,19 @@ const NavigationStyled = styled.nav`
   align-items: center;
   height: 100%;
   width: 100%;
-  border-right: 1px solid var(--border-color);`;
+  border-right: 1px solid var(--border-color);
+
+  .avatar {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+    img {
+      width: 70%;
+      border-radius: 50%;
+      border: 8px solid var(--border-color);
+    }
+  }
+  `;
 
 export default Navigation;
