@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import Navigation from "./Navigation"
 
 function Sidebar() {
   return (
-    <SidebarStyled>Sidebar</SidebarStyled>
+    <SidebarStyled>
+      <Navigation/>
+    </SidebarStyled>
   )
 }
 
