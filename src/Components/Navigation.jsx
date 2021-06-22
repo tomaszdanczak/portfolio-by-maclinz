@@ -50,6 +50,13 @@ function Navigation() {
   );
 }
 
-const NavigationStyled = styled.nav``;
+const NavigationStyled = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid var(--border-color);`;
 
 export default Navigation;
