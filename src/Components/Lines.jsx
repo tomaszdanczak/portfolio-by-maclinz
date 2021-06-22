@@ -12,6 +12,22 @@ function Lines() {
   )
 }
 
-const LinesStyled = styled.div``
+const LinesStyled = styled.div`
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0.4;
+  z-index: -1;
+
+  .line-1,
+  .line-2,
+  .line-3,
+  .line-4 {
+    width: 1px;
+    min-height: 100vh;
+    background-color: var(--border-color);
+  }`
 
 export default Lines
