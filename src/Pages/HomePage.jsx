@@ -48,6 +48,51 @@ const HomePageStyled = styled.header`
     text-align: center;
     width: 80%;
   }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .icon {
+      border: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      svg {
+        margin: 0.5rem;
+      }
+    }
+
+    .i-facebook {
+      &:hover {
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+      }
+    }
+
+    .i-youtube {
+      &:hover {
+        border: 2px solid red;
+        color: red;
+      }
+    }
+
+    .i-github {
+      &:hover {
+        border: 2px solid #574687;
+        color: #574687;
+      }
+    }
+  }
 `;
 
 export default HomePage;
