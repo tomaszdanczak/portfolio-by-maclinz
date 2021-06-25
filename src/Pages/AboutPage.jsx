@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
 function AboutPage() {
-  return (
-    <div>About Page</div>
-  )
+  return <AboutStyled>About Page</AboutStyled>;
 }
 
-export default AboutPage
+const AboutStyled = styled.section``;
+
+export default AboutPage;
