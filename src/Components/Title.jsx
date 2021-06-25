@@ -43,6 +43,16 @@ const TitleStyled = styled.div`
       border-radius: 15px;
       left: 0;
     }
+
+    span {
+      font-weight: 900;
+      color: rgba(25, 29, 43, 0.44);
+      font-size: 5rem;
+      position: absolute;
+      left: 0;
+      top: 30%;
+      z-index: -1;
+    }
   }
 `;
 
