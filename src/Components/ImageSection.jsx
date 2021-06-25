@@ -54,6 +54,43 @@ const ImageSectionStyled = styled.div`
       object-fit: cover;
     }
   }
+
+  .right-content {
+    width: 100%;
+
+    h4 {
+      font-size: 2rem;
+      color: var(--white-color);
+
+      span {
+        font-size: 2rem;
+      }
+    }
+
+    .paragraphy {
+      padding: 1rem 0;
+    }
+
+    .about-info {
+      display: flex;
+      padding-bottom: 1.4rem;
+
+      .info-title {
+        padding-right: 3rem;
+
+        p {
+          font-weight: 600;
+        }
+      }
+
+      .info-title,
+      .info {
+        p {
+          padding: 0.3rem 0;
+        }
+      }
+    }
+  }
 `;
 
 export default ImageSection;
