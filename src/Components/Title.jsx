@@ -11,6 +11,39 @@ function Title({ title, span }) {
   );
 }
 
-const TitleStyled = styled.div``;
+const TitleStyled = styled.div`
+  position: relative;
+
+  h2 {
+    color: var(--white-color);
+    font-size: 3.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.7rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 7.4rem;
+      height: 0.33rem;
+      background-color: var(--background-light-color-2);
+      border-radius: 15px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 3.5rem;
+      height: 0.33rem;
+      background-color: var(--primary-color);
+      border-radius: 15px;
+      left: 0;
+    }
+  }
+`;
 
 export default Title;
