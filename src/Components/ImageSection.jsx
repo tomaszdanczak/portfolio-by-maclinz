@@ -42,6 +42,9 @@ function ImageSection() {
   );
 }
 
-const ImageSectionStyled = styled.div``;
+const ImageSectionStyled = styled.div`
+  margin-top: 5rem;
+  display: flex;
+`;
 
 export default ImageSection;
