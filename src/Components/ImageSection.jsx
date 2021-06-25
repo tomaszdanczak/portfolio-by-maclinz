@@ -45,6 +45,15 @@ function ImageSection() {
 const ImageSectionStyled = styled.div`
   margin-top: 5rem;
   display: flex;
+
+  .left-content {
+    width: 100%;
+
+    img {
+      width: 95%;
+      object-fit: cover;
+    }
+  }
 `;
 
 export default ImageSection;
