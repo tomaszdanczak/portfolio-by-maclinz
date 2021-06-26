@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { InnerLayout } from "../styles/Layouts";
 import Title from "./Title";
 import ServiceCard from "./ServiceCard";
+import design from "../img/design.svg";
 
 function ServicesSection() {
   return (
@@ -10,7 +11,13 @@ function ServicesSection() {
       <ServicesSectionStyled>
         <Title title={"services"} span={"services"} />
         <div className="services">
-          <ServiceCard />
+          <ServiceCard
+            image={design}
+            title={"Web Design"}
+            paragraph={
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia"
+            }
+          />
         </div>
       </ServicesSectionStyled>
     </InnerLayout>
