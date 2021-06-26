@@ -42,6 +42,13 @@ function ServicesSection() {
   );
 }
 
-const ServicesSectionStyled = styled.section``;
+const ServicesSectionStyled = styled.section`
+  .services {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+`;
 
 export default ServicesSection;
