@@ -15,10 +15,8 @@ function ServiceCard({ image, title, paragraph }) {
 
 const ServiceCardStyled = styled.div`
   background-color: var(--background-dark-grey);
+  border: 1px solid var(--border-color);
   border-top: 8px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
   transition: all 0.4s ease-in-out;
 
   &:hover {
