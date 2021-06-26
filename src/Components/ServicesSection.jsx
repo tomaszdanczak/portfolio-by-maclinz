@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { InnerLayout } from "../styles/Layouts";
+import Title from "./Title";
 
 function ServicesSection() {
   return (
     <InnerLayout>
-      <ServicesSectionStyled>Services Section</ServicesSectionStyled>
+      <ServicesSectionStyled>
+        <Title title={"services"} span={"services"} />
+      </ServicesSectionStyled>
     </InnerLayout>
   );
 }
