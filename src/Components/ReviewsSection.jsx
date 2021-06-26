@@ -5,11 +5,10 @@ import Title from "./Title";
 
 function ReviewsSection() {
   return (
-    <InnerLayout>
-      <ReviewsSectionStyled>
-        <Title title={"reviews"} span={"reviews"} />
-      </ReviewsSectionStyled>
-    </InnerLayout>
+    <ReviewsSectionStyled>
+      <Title title={"reviews"} span={"reviews"} />
+      <InnerLayout></InnerLayout>
+    </ReviewsSectionStyled>
   );
 }
 const ReviewsSectionStyled = styled.section``;
