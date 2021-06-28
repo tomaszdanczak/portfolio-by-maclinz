@@ -16,6 +16,37 @@ function ContactItem({ icon, title, contact1, contact2 }) {
   );
 }
 
-const ContactItemStyled = styled.div``;
+const ContactItemStyled = styled.div`
+  padding: 1.5rem 2rem;
+  background-color: var(--background-dark-grey);
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  .left-content {
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    margin-right: 1.5rem;
+
+    svg {
+      font-size: 2.3rem;
+    }
+  }
+
+  .right-content {
+    h6 {
+      color: var(--white-color);
+      font-size: 1.4rem;
+      padding-bottom: 0.6rem;
+    }
+
+    p {
+      padding: 0.1rem 0;
+    }
+  }
+`;
 
 export default ContactItem;

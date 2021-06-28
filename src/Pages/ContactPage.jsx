@@ -136,6 +136,11 @@ const ContactPageStyled = styled.section`
       }
     }
   }
+
+  .right-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export default ContactPage;
