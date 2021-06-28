@@ -9,7 +9,7 @@ function Skills() {
     <SkillsStyled>
       <Title title={"My Skills"} span={"My Skills"} />
 
-      <InnerLayout>
+      <InnerLayout className="skills">
         <ProgressBar title={"HTML5"} width={"70%"} text={"70%"} />
         <ProgressBar title={"CSS3"} width={"90%"} text={"90%"} />
         <ProgressBar title={"JavaScript"} width={"85%"} text={"85%"} />
@@ -22,6 +22,13 @@ function Skills() {
   );
 }
 
-const SkillsStyled = styled.section``;
+const SkillsStyled = styled.section`
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+  }
+`;
 
 export default Skills;
