@@ -25,6 +25,29 @@ const ButtonsStyled = styled.div`
   margin: 2.4rem auto;
 `;
 
-const ButtonStyled = styled.button``;
+const ButtonStyled = styled.button`
+  outline: none;
+  border: none;
+  background-color: var(--background-light-color-2);
+  padding: 0.4rem 2rem;
+  font-size: inherit;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 0.6rem;
+
+  &:not(:last-child) {
+    margin-right: 0.6rem;
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--primary-color);
+  }
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+`;
 
 export default Buttons;
