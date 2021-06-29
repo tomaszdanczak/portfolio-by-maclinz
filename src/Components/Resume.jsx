@@ -21,6 +21,10 @@ function Resume() {
   );
 }
 
-const ResumeStyled = styled.section``;
+const ResumeStyled = styled.section`
+  .small-title {
+    padding-bottom: 3rem;
+  }
+`;
 
 export default Resume;
