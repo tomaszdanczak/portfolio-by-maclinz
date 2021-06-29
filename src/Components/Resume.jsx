@@ -55,6 +55,10 @@ const ResumeStyled = styled.section`
   .small-title {
     padding-bottom: 3rem;
   }
+
+  .resume-content {
+    border-left: 2px solid var(--border-color);
+  }
 `;
 
 export default Resume;
