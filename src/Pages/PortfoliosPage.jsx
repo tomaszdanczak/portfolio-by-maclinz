@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { MainLayout, InnerLayout } from "../styles/Layouts";
 import Title from "../Components/Title";
 import portfolios from "../data/portfolios";
+import PortfolioItems from "../Components/PortfolioItems";
 
 function PortfoliosPage() {
   const [portfolioItems, setPortfolioItems] = useState(portfolios);
@@ -11,7 +12,9 @@ function PortfoliosPage() {
     <PortfoliosPageStyled>
       <MainLayout>
         <Title title={"Portfolios"} span={"Portfolios"} />
-        <InnerLayout>Portfolios Page</InnerLayout>
+        <InnerLayout>
+          <PortfolioItems portfolioItems={portfolioItems} />
+        </InnerLayout>
       </MainLayout>
     </PortfoliosPageStyled>
   );
