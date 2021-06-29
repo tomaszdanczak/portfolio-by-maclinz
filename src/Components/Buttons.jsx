@@ -15,7 +15,15 @@ function Buttons({ filter, buttons }) {
   );
 }
 
-const ButtonsStyled = styled.div``;
+const ButtonsStyled = styled.div`
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 2.4rem auto;
+`;
 
 const ButtonStyled = styled.button``;
 
