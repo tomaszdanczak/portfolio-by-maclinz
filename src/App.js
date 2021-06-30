@@ -9,11 +9,15 @@ import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import Lines from "./Components/Lines";
 import DarkModeSwitch from "./Components/DarkModeSwitch";
+import HamburgerMenu from "./Components/HamburgerMenu";
 
 function App() {
   return (
     <div className="App">
       <Sidebar />
+
+      <HamburgerMenu />
+
       <DarkModeSwitch />
 
       <MainContentStyled>
