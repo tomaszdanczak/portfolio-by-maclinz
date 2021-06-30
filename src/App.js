@@ -8,14 +8,16 @@ import PortfoliosPage from "./Pages/PortfoliosPage";
 import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import Lines from "./Components/Lines";
+import DarkModeSwitch from "./Components/DarkModeSwitch";
 
 function App() {
   return (
     <div className="App">
       <Sidebar />
+      <DarkModeSwitch />
 
       <MainContentStyled>
-        <Lines/>
+        <Lines />
 
         <Switch>
           <Route path="/" exact>
@@ -46,6 +48,6 @@ const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
   min-height: 100vh;
-  `
+`;
 
 export default App;
