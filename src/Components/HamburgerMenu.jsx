@@ -13,6 +13,15 @@ function HamburgerMenu() {
   );
 }
 
-const HamburgerMenuStyled = styled.div``;
+const HamburgerMenuStyled = styled.div`
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  z-index: 25;
+
+  svg {
+    font-size: 3rem;
+  }
+`;
 
 export default HamburgerMenu;
