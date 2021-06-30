@@ -25,10 +25,10 @@ function DarkModeSwitch() {
       <div className="right-content">
         <Switch
           value=""
-          // checked={}
+          checked={checked}
           inputProps={{ "aria-label": "" }}
           size="medium"
-          // onClick={}
+          onClick={themeToggler}
         />
       </div>
     </DarkModeSwitchStyled>
