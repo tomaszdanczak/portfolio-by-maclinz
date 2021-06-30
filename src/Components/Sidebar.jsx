@@ -1,13 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-import Navigation from "./Navigation"
+import React from "react";
+import styled from "styled-components";
+import Navigation from "./Navigation";
 
-function Sidebar() {
+function Sidebar({ navToggle }) {
   return (
-    <SidebarStyled>
-      <Navigation/>
+    <SidebarStyled className={`${navToggle ? "nav-toggle" : ""}`}>
+      <Navigation />
     </SidebarStyled>
-  )
+  );
 }
 
 const SidebarStyled = styled.div`
@@ -15,6 +15,6 @@ const SidebarStyled = styled.div`
   position: fixed;
   height: 100vh;
   background-color: var(--sidebar-dark-color);
-`
+`;
 
-export default Sidebar
+export default Sidebar;
