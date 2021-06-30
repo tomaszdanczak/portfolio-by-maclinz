@@ -3,10 +3,10 @@ import styled from "styled-components";
 import MenuIcon from "@material-ui/icons/Menu";
 import { IconButton } from "@material-ui/core";
 
-function HamburgerMenu() {
+function HamburgerMenu({ onToggle }) {
   return (
     <HamburgerMenuStyled>
-      <IconButton>
+      <IconButton onClick={() => onToggle()}>
         <MenuIcon />
       </IconButton>
     </HamburgerMenuStyled>

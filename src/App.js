@@ -15,11 +15,15 @@ import { useState } from "react";
 function App() {
   const [navToggle, setNavToggle] = useState(false);
 
+  const handleToggle = () => {
+    setNavToggle(!navToggle);
+  };
+
   return (
     <div className="App">
       <Sidebar />
 
-      <HamburgerMenu />
+      <HamburgerMenu onToggle={handleToggle} />
 
       <DarkModeSwitch />
 
