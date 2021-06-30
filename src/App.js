@@ -9,11 +9,22 @@ import BlogsPage from "./Pages/BlogsPage";
 import ContactPage from "./Pages/ContactPage";
 import Lines from "./Components/Lines";
 import DarkModeSwitch from "./Components/DarkModeSwitch";
+import HamburgerMenu from "./Components/HamburgerMenu";
+import { useState } from "react";
 
 function App() {
+  const [navToggle, setNavToggle] = useState(false);
+
+  const handleToggle = () => {
+    setNavToggle(!navToggle);
+  };
+
   return (
     <div className="App">
-      <Sidebar />
+      <Sidebar navToggle={navToggle} />
+
+      <HamburgerMenu onToggle={handleToggle} />
+
       <DarkModeSwitch />
 
       <MainContentStyled>
@@ -48,6 +59,11 @@ const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
   min-height: 100vh;
+  transition: all 0.4s ease-in-out;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
+  }
 `;
 
 export default App;

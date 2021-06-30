@@ -112,6 +112,12 @@ h1 {
     font-size: 1.2rem;
     padding-bottom: .6rem;
 }
+
+  // Nav Toggler
+  .nav-toggle {
+  transform: translate(0);
+  z-index: 20;
+}
 `;
 
 export default GlobalStyle;
