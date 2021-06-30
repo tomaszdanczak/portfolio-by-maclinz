@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import Switch from "@material-ui/core/Switch";
 
 function DarkModeSwitch() {
+  const [theme, setTheme] = useState("dark-theme");
+  const [checked, setChecked] = useState(false);
+
   return (
     <DarkModeSwitchStyled>
       <div className="left-content">
