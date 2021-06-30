@@ -7,6 +7,10 @@ function DarkModeSwitch() {
   const [theme, setTheme] = useState("dark-theme");
   const [checked, setChecked] = useState(false);
 
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
+
   const themeToggler = () => {
     if (theme === "light-theme") {
       setTheme("dark-theme");
