@@ -22,6 +22,10 @@ const HamburgerMenuStyled = styled.div`
   svg {
     font-size: 3rem;
   }
+
+  @media screen and (min-width: 1201px) {
+    display: none;
+  }
 `;
 
 export default HamburgerMenu;
