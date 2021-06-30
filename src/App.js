@@ -10,8 +10,11 @@ import ContactPage from "./Pages/ContactPage";
 import Lines from "./Components/Lines";
 import DarkModeSwitch from "./Components/DarkModeSwitch";
 import HamburgerMenu from "./Components/HamburgerMenu";
+import { useState } from "react";
 
 function App() {
+  const [navToggle, setNavToggle] = useState(false);
+
   return (
     <div className="App">
       <Sidebar />
