@@ -98,8 +98,16 @@ h1 {
     font-size: 4rem;
     color: var(--white-color);
 
+    @media screen and (max-width: 500px) {
+      font-size: 3rem;
+    }
+
     span {
       font-size: 4rem;
+
+      @media screen and (max-width: 500px) {
+        font-size: 3rem;
+      }
     }
   }
 
