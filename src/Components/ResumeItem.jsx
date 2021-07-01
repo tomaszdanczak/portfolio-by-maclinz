@@ -69,6 +69,14 @@ const ResumeItemStyled = styled.div`
       padding-bottom: 0.6rem;
       font-size: 1.5rem;
     }
+
+    @media screen and (max-width: 620px) {
+      h5,
+      h6,
+      p {
+        font-size: 80%;
+      }
+    }
   }
 `;
 

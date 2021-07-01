@@ -88,6 +88,10 @@ const ContactPageStyled = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
+
+    @media screen and (max-width: 980px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .contact-title {
@@ -133,6 +137,12 @@ const ContactPageStyled = styled.section`
         color: inherit;
         width: 100%;
         padding: 0.8rem 1rem;
+      }
+    }
+
+    .f-button {
+      @media screen and (max-width: 980px) {
+        margin-bottom: 3rem;
       }
     }
   }

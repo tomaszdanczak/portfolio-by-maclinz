@@ -30,6 +30,11 @@ const ReviewsSectionStyled = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
+
+    @media screen and (max-width: 650px) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 3rem;
+    }
   }
 `;
 
